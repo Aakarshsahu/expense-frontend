@@ -1,0 +1,160 @@
+:root {
+    --bg: #f6f8fb;
+    --card: #ffffff;
+    --muted: #6b7280;
+    --accent: #0ea5a4
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Inter, Segoe UI, Roboto, 'Helvetica Neue', Arial
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+    color: #0f172a
+}
+
+.container {
+    max-width: 980px;
+    margin: 32px auto;
+    padding: 16px
+}
+
+h1 {
+    margin: 0 0 16px
+}
+
+.grid {
+    display: flex;
+    gap: 16px
+}
+
+.col {
+    flex: 1
+}
+
+.card {
+    background: var(--card);
+    padding: 16px;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(12, 18, 30, 0.06)
+}
+
+form.card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    color: var(--muted)
+}
+
+input {
+    padding: 8px;
+    border: 1px solid #e6e9ef;
+    border-radius: 6px;
+    margin-top: 6px
+}
+
+.row {
+    display: flex;
+    gap: 8px;
+    margin-top: 8px
+}
+
+.btn {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background: #e6eef0
+}
+
+.btn.primary {
+    background: var(--accent);
+    color: white
+}
+
+.btn.small {
+    padding: 6px 8px;
+    font-size: 13px;
+    margin-right: 6px;
+}
+
+.btn.danger {
+    background: #fee2e2;
+    color: #b91c1c
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px
+}
+
+.list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    border-radius: 8px;
+    background: #fbfdff
+}
+
+.title {
+    font-weight: 600
+}
+
+.meta {
+    font-size: 13px;
+    color: var(--muted)
+}
+
+.amount {
+    font-weight: 700;
+    margin-right: 12px
+}
+
+.total-value {
+    color: #0b74a8;
+    font-weight: 700;
+}
+
+.btn.small {
+    margin-right: 6px;
+}
+
+.heading {
+    text-align: center;
+    color: #0ea5a4;
+    font-weight: 800;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+}
+
+
+.total-value {
+    color: #0b74a8;
+    font-weight: 700;
+}
+
+@media (max-width: 800px) {
+
+    .card>div {
+        flex-direction: column;
+    }
+}
+
+
+@media(max-width:800px) {
+    .grid {
+        flex-direction: column
+    }
+}
